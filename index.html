@@ -9,7 +9,64 @@
     
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="style.css">
+     <style>
+    /* Reset e Scroll Suave */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background-color: #020617; 
+        color: #f8fafc;
+        overflow-x: hidden; /* Evita scroll horizontal no celular */
+    }
+
+    /* Estilização da Imagem de Perfil */
+    .profile-img {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        border: 4px solid #0ea5e9;
+        border-radius: 9999px;
+    }
+
+    /* Ajustes para o Menu em telas pequenas */
+    @media (max-width: 640px) {
+        nav .max-w-6xl {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .nav-links {
+            gap: 0.75rem !important; /* Espaço menor entre links */
+        }
+
+        .text-xl {
+            font-size: 1.1rem !important; 
+        }
+    }
+
+    /* Efeito de Vidro  para Mobile */
+    .backdrop-blur-md {
+        -webkit-backdrop-filter: blur(12px); 
+        backdrop-filter: blur(12px);
+    }
+
+    
+    header {
+        padding-top: 8rem !important;
+    }
+
+    .contact-btn {
+        white-space: nowrap;
+    }
+</style>
 </head>
 <body class="font-sans antialiased">
 
@@ -39,12 +96,20 @@
             além de desenvolver interfaces funcionais utilizando HTML, CSS e JavaScript.
         </p>
 
-        <div class="flex flex-wrap gap-3 justify-center">
-            <a href="https://github.com/nicolas-alves327" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition text-2xl">
-            <i class="fab fa-github"></i></a>
+      <div class="flex flex-wrap gap-3 justify-center">
+    <a href="https://github.com/nicolas-alves327" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition text-2xl">
+        <i class="fab fa-github"></i>
+    </a>
 
-            <a href="#" class="text-slate-400 hover:text-white transition text-2xl"><i class="fab fa-linkedin"></i></a>
-        </div>
+    <a href="#" class="text-slate-400 hover:text-white transition text-2xl">
+        <i class="fab fa-linkedin"></i>
+    </a>
+
+    <a href="https://www.instagram.com/nicolasc_al" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition text-2xl">
+        <i class="fab fa-instagram"></i></a>
+    
+
+</div>
     </header>
 
     <section id="tecnologias" class="py-20 bg-slate-900/40 border-y border-slate-800/50">
